@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clack Laptop Rental System</title>
+    <!-- Bulma CDN for styling -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+  </head>
+
+  <body class="is-flex is-flex-direction-column is-fullheight">
+    <!-- Header -->
+    <header class="header">
+      <div class="columns is-vcentered">
+        <div class="column is-narrow" style="padding-left: 20px">
+          <figure class="image" style="max-width: 128px; max-height: 128px">
+            <a id="clack">
+              <img src="Clack Logo no background.png" alt="Bucky" />
+            </a>
+          </figure>
+        </div>
+        <div class="column has-text-centered">
+          <h1 class="title has-text-weight-bold has-text-info is-size-1">
+            Laptop Rental System
+          </h1>
+        </div>
+        <div class="column is-narrow"></div>
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav
+      class="navbar has-text-weight-bold mx-5 my-5"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div
+        id="navbar"
+        class="navbar-menu is-flex is-justify-content-center is-align-items-center is-flex-wrap-wrap"
+      >
+        <a class="navbar-item button is-info is-outlined mx-2" id="homePage"
+          >🏠 Home</a
+        >
+        <a class="navbar-item button is-info is-outlined mx-2" id="reviewp"
+          >👉 About</a
+        >
+        <a
+          class="navbar-item button is-info is-outlined mx-2"
+          id="loginPageclick"
+          >⬇️ Login</a
+        >
+        <a
+          class="navbar-item button is-info is-outlined mx-2"
+          id="signupPageclick"
+          >⏬ Sign Up</a
+        >
+        <a
+          class="navbar-item button is-info is-outlined mx-2"
+          id="manageUsersPage"
+          >👥 Manage Users</a
+        >
+        <a
+          class="navbar-item button is-info is-outlined mx-2"
+          id="manageDevicesPage"
+          >📲 Manage Devices</a
+        >
+        <a
+          class="navbar-item button is-info is-outlined mx-2"
+          id="manageRentalsPage"
+          >🗄 Manage Rentals</a
+        >
+        <a
+          class="navbar-item button is-info is-outlined mx-2"
+          id="rentalHistoryPage"
+          >🗄 My Rentals</a
+        >
+        <a
+          class="navbar-item open-modal button is-info is-outlined mx-2"
+          id="contactITPage"
+          >🖥️ Contact IT</a
+        >
+        <a class="navbar-item button is-danger is-outlined mx-2" id="logoutPage"
+          >❌ Logout</a
+        >
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="main" class="columns is-flex is-justify-content-center is-hidden">
+      <div class="column is-half">
+        <div class="box">
+          <h1 class="title has-text-centered has-text-info">Request Rental</h1>
+          <div class="field">
+            <label class="label has-text-info">Start Date</label>
+            <div class="control">
+              <input
+                class="input is-info"
+                type="text"
+                placeholder="Enter Start Date"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label has-text-info">End Date</label>
+            <div class="control">
+              <input
+                class="input is-info"
+                type="text"
+                placeholder="Enter End Date"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label has-text-info">Reason For Rental</label>
+            <div class="control">
+              <input
+                class="input is-info"
+                type="text"
+                placeholder="Enter Reason"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label has-text-info">Device Selection</label>
+            <div class="control">
+              <div class="select is-info is-fullwidth">
+                <select>
+                  <option>Select a device</option>
+                  <option>Device 1</option>
+                  <option>Device 2</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-grouped is-justify-content-center">
+            <div class="control">
+              <button class="button is-info">Submit</button>
+            </div>
+            <div class="control">
+              <button class="button is-info is-light">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Landing Page -->
+    <div id="landing page" class="columns is-flex is-justify-content-center">
+      <div class="column is-half">
+        <div class="box">
+          <h1 class="title has-text-centered">
+            <strong>Please Sign Up or Login</strong>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Page -->
+    <div
+      id="About Page"
+      class="columns is-flex is-justify-content-center is-hidden"
+    >
+      <div class="column is-half">
+        <div class="box">
+          <h2 class="subtitle has-text-weight-bold is-info">About This Site</h2>
+          <p>
+            This platform was designed to streamline laptop rentals for
+            employees at Clack Corporation. Built by the IT department, our goal
+            is to provide a simple and efficient way for team members to check
+            out and manage laptops for work purposes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Page -->
+    <div
+      id="loginPage"
+      class="columns is-flex is-justify-content-center is-hidden"
+    >
+      <div class="column is-half">
+        <div class="box">
+          <h1 class="title has-text-centered has-text-info">Login</h1>
+          <div class="field">
+            <label class="label has-text-info">Email</label>
+            <div class="control">
+              <input
+                class="input is-info"
+                type="email"
+                placeholder="Enter your email"
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label has-text-info">Password</label>
+            <div class="control">
+              <input
+                class="input is-info"
+                type="password"
+                placeholder="Enter your password"
+              />
+            </div>
+          </div>
+          <div class="field is-grouped is-justify-content-center">
+            <div class="control">
+              <button class="button is-info">Login</button>
+            </div>
+            <div class="control">
+              <button class="button is-info is-light">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign Up Page -->
+    <div
+      id="signupPage"
+      class="columns is-flex is-justify-content-center is-hidden"
+    >
+      <div class="column is-half">
+        <div class="box">
+          <h1 class="title has-text-centered has-text-info">Sign Up</h1>
+          <div class="field">
+            <label class="label has-text-info">Full Name</label>
+            <div class="control">
+              <input
+                class="input is-info"
+                type="text"
+                placeholder="Enter your full name"
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label has-text-info">Email</label>
+            <div class="control">
+              <input
+                class="input is-info"
+                type="email"
+                placeholder="Enter your email"
+              />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label has-text-info">Password</label>
+            <div class="control">
+              <input
+                class="input is-info"
+                type="password"
+                placeholder="Enter your password"
+              />
+            </div>
+          </div>
+          <div class="field is-grouped is-justify-content-center">
+            <div class="control">
+              <button class="button is-info">Sign Up</button>
+            </div>
+            <div class="control">
+              <button class="button is-info is-light">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="has-text-centered has-background-light mt-auto">
+      <br />
+      <p>Copyright © 2025 Clack Corporation</p>
+      <button id="ITFooter" class="button open-modal is-info is-outlined mt-3">
+        ⚡ Contact IT
+      </button>
+      <br />
+      <br />
+    </footer>
+
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
