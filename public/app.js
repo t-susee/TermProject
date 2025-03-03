@@ -153,4 +153,110 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("rentalHistoryPage").classList.add("is-hidden");
     }
   });
+  // SPA Code
+  function loadContent(section) {
+    const content = document.getElementById("main");
+
+    if (section === "Home") {
+      content.innerHTML = `
+      <div class="box">
+        <h2 class="title is-4">Home</h2>
+        <form>
+          <div class="field">
+            <label class="label">Start Date</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Enter Start Date">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">End Date</label>
+            <div class="control">
+              <input class="input" type="email" placeholder="Enter End Date">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Reason For Rental</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Enter Reason for Rental">
+            </div>
+          </div>
+          <div class="control"></div>
+        </form>
+      </div>
+    `;
+    } else if (section === "About") {
+      content.innerHTML = `
+      <div class="content">
+        <h2 class="title is-4">About This Site</h2>
+        <p>This platform was designed to streamline laptop rentals for employees at Clack Corporation, built by the IT department. Our goal is to provide a simple and efficient way for team members to check out and manage laptops for work purposes.</p>
+      </div>
+    `;
+    } else if (section === "Login") {
+      content.innerHTML = `
+      <div class="box">
+        <h2 class="title is-4">Login</h2>
+        <form>
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input" type="email" placeholder="Enter your email">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Password</label>
+            <div class="control">
+              <input class="input" type="password" placeholder="Enter your password">
+            </div>
+          </div>
+          <div class="control">
+            <button class="button is-primary">Login</button>
+          </div>
+        </form>
+      </div>
+    `;
+    } else if (section === "Sign Up") {
+      content.innerHTML = `
+      <div class="box">
+        <h2 class="title is-4">Sign Up</h2>
+        <form>
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Enter your full name">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input" type="email" placeholder="Enter your email">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Password</label>
+            <div class="control">
+              <input class="input" type="password" placeholder="Enter your password">
+            </div>
+          </div>
+          <div class="control">
+            <button class="button is-primary">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    `;
+    } else if (section === "Manage Users") {
+      content.innerHTML = `
+      <div class="box">
+        <h2 class="title is-4">Manage Users</h2>
+        <!-- Manage Users content here -->
+      </div>
+    `;
+    } else if (section === "Contact IT") {
+      content.innerHTML = `
+      <div class="box">
+        <h2 class="title is-4">Contact IT</h2>
+        <p>If you have any issues, please reach out to the IT department.</p>
+      </div>
+    `;
+    }
+  }
 });
