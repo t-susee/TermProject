@@ -149,6 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("loginPageclick").classList.add("is-hidden");
       document.getElementById("signupPageclick").classList.add("is-hidden");
       document.getElementById("homePage").classList.remove("is-hidden");
+      document.getElementById("reviewp").classList.remove("is-hidden");
 
       // Check for admin custom claim
       user
@@ -196,6 +197,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("manageUsersPage").classList.add("is-hidden");
       document.getElementById("rentalHistoryPage").classList.add("is-hidden");
       document.getElementById("homePage").classList.add("is-hidden");
+      document.getElementById("reviewp").classList.add("is-hidden");
     }
   });
 
